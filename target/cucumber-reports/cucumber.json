@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Verify users can login to portal with valid credentials",
+        "description": "",
+        "id": "login-to-netflix-website;verify-users-can-login-to-portal-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20395602000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User visits website",
+            "match": {
+              "location": "StepDefinitions.user_visits_e_commerce_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5078766900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters valid \"xyzabc@abc.net\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xyzabc@abc.net",
+                  "offset": 19
+                },
+                {
+                  "val": "abc123",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.user_enters_valid_credentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4230119500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User can logged in successfully",
+            "match": {
+              "location": "StepDefinitions.user_can_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to Netflix website",
+    "description": "",
+    "id": "login-to-netflix-website",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": []
+  }
+]
